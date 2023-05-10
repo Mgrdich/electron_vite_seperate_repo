@@ -8,10 +8,10 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "electron:odev": "cross-env IS_DEV=true electron-forge start",
+    "electron:pre_dev": "cross-env IS_DEV=true electron-forge start",
     "electron:build": "electron-forge make",
     "electron:package": "electron-forge package",
-    "electron:dev": "concurrently -k \"npm run web:dev\" \"npm run electron:odev\"",
+    "electron:dev": "concurrently -k \"npm run web:dev\" \"npm run electron:pre_dev\"",
     "web:dev": "npm run dev --prefix ../",
     "web:build": "npm run build --prefix ../"
   },
