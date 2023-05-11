@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && electron-forge start",
     "package": "tsc && electron-forge package",
-    "electron:pre_dev": "cross-env IS_DEV=true tsc && electron-forge start",
+    "electron:pre_dev": "cross-env tsc && IS_DEV=true electron-forge start",
     "electron:build": "npm run web:build && tsc && electron-forge package",
     "electron:package": "electron-forge package",
     "electron:dev": "concurrently -k \"npm run web:dev\" \"npm run electron:pre_dev\"",

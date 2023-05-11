@@ -27,4 +27,6 @@ electron/out/*
 
 electron/build/*
 
+electron/dist/*
+
 build/*
