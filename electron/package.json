@@ -13,7 +13,7 @@
     "electron:package": "electron-forge package",
     "electron:dev": "concurrently -k \"npm run web:dev\" \"npm run electron:pre_dev\"",
     "web:dev": "npm run dev --prefix ../",
-    "web:build": "npm run build --prefix ../"
+    "web:build": "IS_ELECTRON=true npm run build --prefix ../"
   },
   "author": "",
   "license": "ISC",

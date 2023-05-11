@@ -25,7 +25,6 @@ function createWindow() {
         mainWindow.webContents.openDevTools({ mode: 'detach' });
     } else {
         // mainWindow.removeMenu();
-        mainWindow.webContents.openDevTools({ mode: 'detach' });
         mainWindow.loadFile(path.join(__dirname, '/build/index.html'));
     }
 }
