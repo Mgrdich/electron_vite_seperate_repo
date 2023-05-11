@@ -22,10 +22,11 @@ function createWindow() {
     // Open the DevTools.
     if (isDev) {
         mainWindow.loadURL('http://localhost:5173');
-        mainWindow.webContents.openDevTools();
+        mainWindow.webContents.openDevTools({ mode: 'detach' });
     } else {
         // mainWindow.removeMenu();
-        mainWindow.loadFile(path.join(__dirname, '../build', 'index.html'));
+        mainWindow.webContents.openDevTools({ mode: 'detach' });
+        mainWindow.loadFile(path.join(__dirname, '/build/index.html'));
     }
 }
 
