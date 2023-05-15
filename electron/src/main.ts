@@ -21,7 +21,6 @@ function createWindow() {
 
     // Open the DevTools.
     if (isDev) {
-        console.log('i am dev?????');
         mainWindow.loadURL('http://localhost:5173');
         mainWindow.webContents.openDevTools({mode: 'detach'});
     } else {
