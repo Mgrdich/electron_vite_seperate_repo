@@ -1,5 +1,8 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    name: 'mgo',
+    executableName: 'mgo',
+  },
   rebuildConfig: {},
   makers: [
     {
